@@ -67,5 +67,6 @@ class DashboardController extends Controller
             $user->age = request('age');
         }
         $user->save();
+        return redirect(route('dashboard'));
     }
 }

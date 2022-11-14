@@ -22,14 +22,13 @@
                         <div class="form-group">
                             <label for="quote" class="py-2">Favorite quotes:</label>
                             
-                            <textarea id="quote" class="form-control" placeholder="Enter quote" name="quote" cols="30" rows="5">@isset($user->name) {{$user->name}} @endisset</textarea>
+                            <textarea id="quote" class="form-control" placeholder="Enter quote" name="quote" cols="30" rows="5">@isset($user->qoute) {{$user->qoute}}@endisset</textarea>
                           </div>
 
                           <div class="form-group">
                             <label for="age" class="py-2">Age:</label>
-                            <input type="text" class="form-control" id="age" placeholder="Enter age" name="age">
+                            <input type="text" class="form-control" id="age" placeholder="Enter age" value="@isset($user->Age) {{$user->Age}} @endisset" name="age">
                           </div>
-
                             <button type="submit" class="btn btn-primary mt-3">Submit</button>
 
                       </form>
