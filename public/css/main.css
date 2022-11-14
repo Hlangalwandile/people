@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #8666b4;
+}
+
+#menu-btn {
+  color: #8666b4;
+  margin-left: -24px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.navbar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  margin-left: -300px;
+  transition: 0.4s;
+}
+.navbar .capital-P {
+  background-color: #8666b4;
+  color: #2b2b2c;
+  font-weight: bold;
+  border: solid 1px;
+  padding: 0px 17px;
+  margin-right: 3px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.navbar .capital-P:hover, .navbar .capital-P:focus, .navbar .capital-P:hover {
+  box-shadow: 2px 2px 2px 1px #8666b4;
+  background-color: #2b2b2c;
+  color: #8666b4;
+}
+.navbar .nav-link {
+  font-size: 1.25em;
+  padding-left: 2.5rem !important;
+  border: solid #8666b4 0px;
+  transition: 0.2s;
+}
+.navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1490196078);
+  border-width: 0px 1px 0px 5px;
+}
+
+#btngotodash {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.btngotodash {
+  border: solid gray 1px;
+  border-radius: 15px;
+  padding: 3px 15px;
+  background-color: #fff;
+}
+
+.active-nav {
+  margin-left: 0;
+}
+
+.active-cont {
+  margin-left: 250px;
+}
