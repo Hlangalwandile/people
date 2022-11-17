@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('profession')->nullable();
             $table->string('qoute')->nullable();
             $table->string('image')->nullable();
-            $table->tinyInteger('Age')->nullable();
+            $table->tinyInteger('age')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
