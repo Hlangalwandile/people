@@ -4,7 +4,7 @@
 <div class="conainer home row">
     <div class="col row d-flex justify-content-between mcd-header">
         <div class="col-md-10">
-            <h1>People</h1>
+            <h1><span>People</span></h1>
             <ul>
                 <li><span>suger</span></li>
                 <li><span>spice</span></li>

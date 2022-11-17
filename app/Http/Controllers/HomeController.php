@@ -10,7 +10,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $users = User::all();
+        $users = User::whereNOTNULL('email_verified_at')->get();
         if($users){
             return view('home',['users'=>$users ]);
         }else{
