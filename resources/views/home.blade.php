@@ -15,6 +15,7 @@
     <div class="col-md-4">
         @isset($users)
         @foreach ($users as $user)
+        @isset($user->qoute)
         <div class="card mcd-card mt-3 mx-3">
             <div class="card-body">
                 <figure class="text-end">
@@ -27,6 +28,7 @@
                   </figure>
             </div>
         </div>
+        @endisset
         @endforeach
         @endisset
         
