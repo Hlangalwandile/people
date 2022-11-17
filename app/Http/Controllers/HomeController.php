@@ -11,7 +11,12 @@ class HomeController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('home',['users'=>$users ]);
+        if($users){
+            return view('home',['users'=>$users ]);
+        }else{
+            return view('home');
+        }
+        
     }
     
     public function home()

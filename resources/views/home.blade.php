@@ -13,6 +13,7 @@
         </div>
     </div>
     <div class="col-md-4">
+        @isset($users)
         @foreach ($users as $user)
         <div class="card mcd-card mt-3 mx-3">
             <div class="card-body">
@@ -27,6 +28,8 @@
             </div>
         </div>
         @endforeach
+        @endisset
+        
     </div>
 </div>
 </section>
