@@ -29,7 +29,7 @@
                 <button class="btn bg-dark" id="menu-btn">toggle</button>
             
                 <div id="btngotodash">
-                    <a href="{{route('home.index')}}" class="btn btngotodash btn-primary">home</a>
+                    <a href="{{route('home.index')}}" class="btn btngotodash">home</a>
                 </div>
             </section>        
             <main class="py-4">

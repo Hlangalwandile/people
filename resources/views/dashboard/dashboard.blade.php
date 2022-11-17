@@ -21,7 +21,6 @@
                         </div>
                         <div class="form-group">
                             <label for="quote" class="py-2">Favorite quotes:</label>
-                            
                             <textarea id="quote" class="form-control" placeholder="Enter quote" name="quote" cols="30" rows="5">@isset($user->qoute) {{$user->qoute}}@endisset</textarea>
                           </div>
 

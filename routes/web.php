@@ -37,5 +37,6 @@ Route::controller(DashboardController::class)->group(function (){
     Route::POST('/update-profile','updateProfile')->name('updateProfile');
     Route::POST('/searchByEmail','userByEmail')->name('userByEmail');
     Route::POST('/deleteUser/{id}','deleteUser')->name('deleteUser');
+    Route::POST('/upadete-user/{id}','editUser')->name('editUser');
 });
 

@@ -1,0 +1,43 @@
+.landing-page{
+    background-image:url('/images/people.jpg');
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.mcd-card{
+    border: 0px;
+    opacity: 0.7;
+    background-color:#2b2b2c;
+    color: white;
+    border-radius: 0;
+}
+.home{
+    height: 100%;
+}
+.mcd-header{
+    color: #2b2b2c;
+    text-align: right;
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    height: 100%;
+    padding: 2em 0;
+    h1{
+        font-size: 15rem;
+    }
+    ul{
+        list-style: none;
+        font-size: 4rem;
+        span{
+            border:solid #8666b4 0px;
+            transition: 0.4s;
+            padding: 0 0.5em;
+            background-color: rgba($color: #fff, $alpha: 0.8);
+            &:hover{
+                border-right-width: 10px;
+            }
+        }
+    }
+}
+cite{
+    color: #8666b4;
+}

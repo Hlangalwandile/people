@@ -19,7 +19,7 @@
                     <div class="card-body">
                       <h5 class="card-title">{{$person->name}}</h5>
                       <h6 class="card-subtitle mb-2 text-muted">{{$person->name}}</h6>
-                      <p class="card-text">{{$person->quote}}</p>
+                      <p class="card-text pt-3">{{$person->qoute}}</p>
                     </div>
                     <div class="card-body">
                       <form action="{{route('deleteUser',$person->id)}}" method="post">

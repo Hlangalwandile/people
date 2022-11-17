@@ -54,11 +54,8 @@ class DashboardController extends Controller
         if(request('profession')){
             $user->profession = request('profession');
         }
-        if(request('qoute')){
-            $user->qoute = request('qoute');
-        }
-        if(request('qoute')){
-            $user->qoute = request('qoute');
+        if(request('quote')){
+            $user->qoute = request('quote');
         }
         if(request('image')){
             $user->image = request('image');
@@ -70,12 +67,35 @@ class DashboardController extends Controller
         return redirect(route('dashboard'));
     }
 
+    public function editUser($id)
+    {
+        $currentuser = auth()->user();
+        $user = User::find($id);
+        if(request('name')){
+            $user->name = request('name');
+        }
+        if(request('profession')){
+            $user->profession = request('profession');
+        }
+        if(request('quote')){
+            $user->qoute = request('quote');
+        }
+        if(request('image')){
+            $user->image = request('image');
+        }
+        if(request('age')){
+            $user->age = request('age');
+        }
+        $user->save();
+        $message = 'User upadted succesfully';
+        return redirect(route('users.editPage',$id))->with('success',$message);
+    }
 
-    public function DeleteUser($id)
+    public function deleteUser($id)
     {
         $user = User::find($id);
         $user->delete();
         $message = 'user deleted succesfully';
-        return redirect(route(''))->with('success',$message);
+        return redirect(route('dashboard.users'))->with('success',$message);
     }
 }

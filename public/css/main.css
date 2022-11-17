@@ -59,6 +59,7 @@ body {
   border: solid 1px #8666b4;
   background-color: #2b2b2c;
   color: #8666b4;
+  border-radius: 15px;
 }
 
 .active-nav {
@@ -94,5 +95,9 @@ body {
 .btn-primary:hover, .btn-primary:active {
   border: solid 1px #8666b4;
   background-color: #2b2b2c;
+  color: #8666b4;
+}
+
+.mcd-profession {
   color: #8666b4;
 }
