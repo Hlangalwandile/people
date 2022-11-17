@@ -1,7 +1,7 @@
 @extends('layouts.user')
 @section('content')
     <div class="container">
-        <h1>Dashboard</h1>
+        <h1>My Profile</h1>
         <div class="container row">
             <div class="card bg-dark text-light col-md-4 p-0">
                 <div class="card-body">

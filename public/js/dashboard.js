@@ -8,6 +8,12 @@ menu_btn.addEventListener("click",()=>{
     menu_btn.classList.toggle("active-flip")
 })
 
+window.addEventListener('load', (event) => {
+    sidebar.classList.add("active-nav")
+    module.classList.add("active-cont")
+    menu_btn.classList.add("active-flip")
+});
+
 window.addEventListener("resize",()=>{
         var w = document.documentElement.clientWidth;
         if(w < 790){

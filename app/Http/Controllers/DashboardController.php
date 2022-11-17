@@ -69,4 +69,13 @@ class DashboardController extends Controller
         $user->save();
         return redirect(route('dashboard'));
     }
+
+
+    public function DeleteUser($id)
+    {
+        $user = User::find($id);
+        $user->delete();
+        $message = 'user deleted succesfully';
+        return redirect(route(''))->with('success',$message);
+    }
 }

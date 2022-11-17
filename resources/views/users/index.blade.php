@@ -5,13 +5,7 @@
         <div class="row">
           <div class="col"><h1 >Users</h1></div>
           <div class="col">
-            <form action="{{route('userByEmail')}}" method="post">
-              @csrf
-              <div class="row float-left">
-                  <input type="email" class="form-control" placeholder="search email" name="email" style='width:250px' required>
-                  <input type="submit" class="btn btn-primary ml-2" value='search' name="search" style='width:100px;margin-left:5px'>
-              </div>
-            </form>
+            
           </div>
         </div>
     </div>
@@ -28,8 +22,14 @@
                       <p class="card-text">{{$person->quote}}</p>
                     </div>
                     <div class="card-body">
-                      <a href="{{route('users.editPage',[$person->id])}}" class="card-link btn btn-danger">Delete</a>
-                      <a href="{{route('users.editPage',[$person->id])}}" class="card-link btn btn-secondary">Edit</a>
+                      <form action="{{route('deleteUser',$person->id)}}" method="post">
+                        @csrf
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('You are about to delete user - {{$person->name}} - . ARE YOU SURE?')">
+                          Delete
+                        </button>
+                        <a href="{{route('users.editPage',[$person->id])}}" class="card-link btn btn-primary">Edit</a>
+                      </form>
+                      
                     </div>
                   </div>
               </div>

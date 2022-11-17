@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +36,6 @@ Route::controller(DashboardController::class)->group(function (){
     Route::get('/profile','profile')->name('dashboard.profile');
     Route::POST('/update-profile','updateProfile')->name('updateProfile');
     Route::POST('/searchByEmail','userByEmail')->name('userByEmail');
+    Route::POST('/deleteUser/{id}','deleteUser')->name('deleteUser');
 });
-
-
 

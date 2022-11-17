@@ -34,7 +34,6 @@ body{
         }
     }
     .nav-link{
-        font-size: 1.25em;
         padding-left: 2.5rem !important;
         border:solid #8666b4 0px;
         transition: 0.2s;
@@ -49,20 +48,50 @@ body{
     position: fixed;
     top: 10px;
     right: 10px;
+   
 }
 .btngotodash {
     border: solid gray 1px;
-    border-radius: 15px;
     padding: 3px 15px;
-    background-color: #fff;
+    border:solid 1px #8666b4;
+    background-color:#2b2b2c ;
+    color:#8666b4;
+
 }
 
 .active-nav {
     margin-left: 0;
+    transition: 0.4s;
 }
 .active-cont{
     margin-left: 250px;
+    transition: 0.4s;
 }
-.home{
+.search-div{
+    input,button{
+        border-radius: 0px;
+        border-color: #8666b4;
+    }
+    button{
+        background-color: #8666b4;
+        color:#fff;
+        
+        &:hover{
+            background-color: initial;
+            color:#8666b4;
+            border-color: #8666b4;
+        }
+    }
     
+}
+.btn-primary{
+    background-color: #8666b4;
+    outline-color: #2b2b2c;
+    color: #2b2b2c;
+    border-width: 0px;
+    &:hover,&:active{
+        border:solid 1px #8666b4;
+        background-color:#2b2b2c ;
+        color:#8666b4;
+    }
 }
