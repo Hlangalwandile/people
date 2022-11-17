@@ -26,7 +26,7 @@
 
                           <div class="form-group">
                             <label for="age" class="py-2">Age:</label>
-                            <input type="text" class="form-control" id="age" placeholder="Enter age" value="@isset($user->Age) {{$user->Age}} @endisset" name="age">
+                            <input type="text" class="form-control" id="age" placeholder="Enter age" value="@isset($user->age) {{$user->age}} @endisset" name="age">
                           </div>
                             <button type="submit" class="btn btn-primary mt-3">Submit</button>
 
